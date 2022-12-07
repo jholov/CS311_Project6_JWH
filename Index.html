@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <header>
+        <title>Balance Sheet Calculator</title>
+        <h1>Bellarmine Financials - Balance Sheet Calculator</h1>
+        <link rel="stylesheet" href="css/BalanceSheetCalc.css">
+    </header>
+    <body>
+        <div class="container">
+            <div id="assetstitle">
+                <h2>Assets</h2>
+            </div>
+            <div id="liabilitiestitle">
+                <h3>Liabilities</h3>
+            </div>
+            <div id="current" class="assets">
+                <label class="subtitles">Current Assets</label>
+                <button id="addAsset" onclick="addAssets()">Add Current Assets</button>
+            </div>
+            <div id="prop" class="assets">
+                <label class="subtitles">Investment Property & Equipment</label>
+                <button id="addProp" onclick="addPropEquip()">Add Investment Property & Equipment</button>
+            </div>
+            <div id="intang" class="assets">
+                <label class="subtitles">Intangibles</label>
+                <button id="addIntang" onclick="addIntang()">Add Intangibles</button>
+            </div>
+            <div id="currentLiab" class="liabilities">
+                <label class="subtitles">Current Liabilities</label>
+                <button id="addCurLiabilities" onclick="addCurLiabilities()">Add Current Liabilities</button>
+            </div>
+            <div id="longLiab" class="liabilities">
+                <label class="subtitles">Long-Term Liabilities</label>
+                <button id="addLongLiabilities" onclick="addLongLiabilities()">Add Long-Term Liabilities</button>
+            </div>
+            <div class="liabilities">
+                <label><strong>Total Position</strong></label>
+                <button id="calPosition" onclick="calTotalPosition()">Calculate Position</button>
+                <label id="totalAssets">Total Assets:</label>
+                <label id="totalLiabilities">Total Liabilities:</label>
+                <label id="totalPostion">Position:</label>
+            </div>
+        </div>
+        <script src="js/BalanceSheetCalc.js"></script>   
+    </body>
+    <footer>
+        <p>© Bellarmine University 2022</p>
+    </footer>
+</html>
